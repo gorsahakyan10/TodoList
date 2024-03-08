@@ -6,7 +6,6 @@ export default class CompleatedTodoList{
     public static setHandler(){
         const { compleatedTodoList } = new CompleatedTodoList();
         compleatedTodoList.addEventListener("click", (e) => {
-          debugger;
            if(e.target instanceof HTMLElement && 
               e.target.closest(".BtnDeleteTodo") &&
               e.target.parentElement instanceof HTMLElement){

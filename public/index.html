@@ -16,18 +16,19 @@
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
         <div id="root"></div>
-        <div class="Container container d-flex flex-column flex-lg-row border">
-            <div
-                class="Todos m-5 p-4 d-flex flex-column align-items-center border border-success"
-            >
+        <div
+            class="Container d-flex flex-column flex-lg-row border border-white"
+        >
+            <div class="Todos m-5 p-4 d-flex flex-column align-items-center">
                 <div class="Title">
                     <h2>Todo List</h2>
                 </div>
                 <form>
-                    <ul class="d-flex">
+                    <ul class="d-flex align-items-center flex-column flex-md-row">
                         <li class="m-1">
                             <input
                                 type="text"
@@ -45,22 +46,27 @@
                 <div class="TodoList List">
                     <ul></ul>
                 </div>
-                <button class="ButtonClearList btn btn-danger invisible">Clear List</button>
+                <button class="ButtonClearList btn btn-danger invisible">
+                    Clear List
+                </button>
             </div>
             <div
-                class="Compleated m-5 p-4 d-flex flex-column align-items-center border border-success"
+                class="Compleated m-5 p-4 d-flex flex-column align-items-center"
             >
                 <div class="Title">
-                    <h2>Compleated List</h2>
+                    <h2>Completed List</h2>
                 </div>
                 <div class="CompleatedTodoList List">
                     <ul></ul>
                 </div>
-                <button class="ButtonClearList btn btn-danger invisible">Clear List</button>
+                <button class="ButtonClearList btn btn-danger invisible">
+                    Clear List
+                </button>
             </div>
         </div>
         <li
-           id="original" class="TodoExample d-flex justify-content-evenly align-items-center invisible"
+            id="original"
+            class="TodoExample d-flex justify-content-evenly align-items-center invisible"
         >
             <span></span>
             <button class="BtnCompleteTodo m-2 btn btn-success">✔</button>

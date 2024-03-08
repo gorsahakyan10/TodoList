@@ -6,9 +6,7 @@ export default class TodoForm {
     public static setHandler(): void {
         const form: HTMLElement = document.querySelector("form") as HTMLElement;
         form.addEventListener("submit", (e) => {
-            debugger;
             e.preventDefault();
-            debugger; 
             if(TodoInput.todoText.length === 0){
                 return;
             }

@@ -5,7 +5,6 @@ export default class ButtonCompleteTodo{
     public static setHandler(){
         const { todoList } = new TodoList();
         todoList.addEventListener("click", (e) => {
-           debugger;
            if(e.target instanceof HTMLElement && 
               e.target.closest(".BtnCompleteTodo") &&
               e.target.parentElement instanceof HTMLElement){
